@@ -1,1 +1,6 @@
-
+El Problema: Una empresa de suscripciones desea identificar a los usuarios "leales" que han mantenido un nivel de actividad constante. Se dispone de un DataFrame con el historial de conexiones diarias de los usuarios. 
+Tu Misión: Escribe una función llamada identificar_usuarios_constantes(df, min_dias_consecutivos) que:
+Reciba un DataFrame con las columnas usuario_id y fecha (en formato string o datetime).
+Convierta la columna fecha a tipo datetime y ordene los datos por usuario y fecha de forma ascendente.
+Identifique a los usuarios que han registrado actividad durante al menos min_dias_consecutivos días seguidos.
+Devuelva una lista ordenada de los usuario_id únicos que cumplen con esta condición de racha de actividad.

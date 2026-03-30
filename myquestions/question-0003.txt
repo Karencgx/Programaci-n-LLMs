@@ -1,0 +1,6 @@
+El Problema: Tienes un conjunto de datos con características numéricas que presentan relaciones no lineales complejas. Deseas aplicar una técnica de reducción de dimensionalidad que capture estas estructuras antes de agrupar los datos.
+Tu Misión: Escribe una función llamada reducir_y_agrupar_kernel(X, n_clusters) que:
+Reciba una matriz de características X (numpy array).
+Aplique KernelPCA de sklearn.decomposition con kernel='rbf' para reducir los datos a 2 componentes principales.
+Utilice el algoritmo KMeans de sklearn.cluster (con random_state=42) sobre estas 2 componentes para identificar n_clusters.
+Devuelva una tupla con dos elementos: el objeto KernelPCA entrenado y un array de numpy con las etiquetas de los clústeres asignadas a cada muestra.

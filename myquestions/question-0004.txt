@@ -1,0 +1,7 @@
+El Problema: En un problema de clasificación multiclase desbalanceada, la precisión global no es suficiente. Necesitas evaluar el desempeño del modelo utilizando una métrica que sea robusta al desequilibrio de clases y que considere todas las categorías por igual. 
+Tu Misión: Escribe una función llamada evaluar_clasificador_mcc(X, y, test_size) que:
+Divida los datos en conjuntos de entrenamiento y prueba (usando test_size y random_state=42).
+Escale las características usando StandardScaler (ajustado solo en el set de entrenamiento).
+Entrene un modelo RandomForestClassifier (con n_estimators=50 y random_state=42).
+Calcule el coeficiente de correlación de Matthews (matthews_corrcoef de sklearn.metrics) sobre el conjunto de prueba.
+Devuelva el valor del coeficiente como un float.

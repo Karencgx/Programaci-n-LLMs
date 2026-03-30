@@ -1,0 +1,6 @@
+El Problema: Un analista de inventarios necesita detectar discrepancias en el stock. Recibe un DataFrame con las existencias iniciales, las ventas registradas y las existencias finales al cierre del día.
+Tu Misión: Escribe una función llamada detectar_discrepancias_inventario(df, umbral_error) que:
+Reciba un DataFrame con las columnas producto_id, stock_inicial, ventas y stock_final_real.
+Calcule el stock_final_esperado como: stock_inicial - ventas.
+Calcule la discrepancia absoluta entre el stock real y el esperado.
+Filtre y devuelva un DataFrame que contenga únicamente los productos donde la discrepancia sea estrictamente mayor al umbral_error, ordenado de mayor a menor discrepancia.
