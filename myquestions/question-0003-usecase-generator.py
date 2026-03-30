@@ -45,3 +45,17 @@ def generar_caso_de_uso_reducir_y_agrupar_kernel():
     output_data = (kpca, labels)
     
     return input_data, output_data
+
+    # --- Ejemplo de uso ---
+if __name__ == "__main__":
+    entrada, salida_esperada = generar_caso_de_uso_reducir_y_agrupar_kernel()
+    
+    print("=== INPUT (Diccionario) ===")
+    print(f"Shape de X: {entrada['X'].shape}")
+    print(f"n_clusters: {entrada['n_clusters']}")
+    
+    print("\n=== OUTPUT ESPERADO ===")
+    kpca, labels = salida_esperada
+    print(f"Tipo de KernelPCA: {type(kpca)}")
+    print(f"Shape de labels: {labels.shape}")
+    print(f"Primeras etiquetas: {labels[:10]}")
